@@ -1,0 +1,15 @@
+.idea
+**/target/
+*.class
+target/
+*.jar
+*.bak
+*.iml
+*.js.map
+*.gz
+*.tgz
+*.log.*
+*.zip
+.project
+.settings
+*.csv

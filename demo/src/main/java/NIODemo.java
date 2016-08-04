@@ -16,7 +16,7 @@ import java.util.Date;
  * Created by matthew on 2016/08/01.
  */
 //使用NIO去读取文件
-public class Main1 {
+public class NIODemo {
     public static void main(String[] args) {
         makeStatics("copyFileWithBuffered");
         makeStatics("copyFileWithChannel");
@@ -28,7 +28,7 @@ public class Main1 {
         try {
             String originalPath = "/home/jason/Desktop/niotest/mysql.tar";
             String targetPath = "/home/jason/Desktop/niotest/mysql123.tar";
-            Method method = Main1.class.getMethod(methodName, String.class, String.class);
+            Method method = NIODemo.class.getMethod(methodName, String.class, String.class);
             long startTime = new Date().getTime();
             for(int i = 0;i<10;i++)
                 method.invoke(null, originalPath, targetPath);
